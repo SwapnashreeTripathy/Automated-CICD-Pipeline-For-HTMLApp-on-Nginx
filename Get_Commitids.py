@@ -17,31 +17,30 @@ commits = response.json()
 commit_ids = [commit["sha"] for commit in commits]
 print(commit_ids[0])
 
+
+#Write Last Commit into Current_GitHub_Commits.txt file(define the path for the txt file)
 dir_path = "/home/swapna/hvdevops/CICDProject-HTML/bash_script/"
-
 file_path=f"{dir_path}/Current_GitHub_Commits.txt"
-
-'''file = open(file_path,'w')
-file.write(commit_ids[0])
-
-file.close()'''
-
 with open(file_path, 'w') as file:
 	file.write(commit_ids[0])
 
 
+'''to write into file path in another method
+file = open(file_path,'w')
+file.write(commit_ids[0])
 
-
+file.close()'''
 
  
-with open(file_path,'r') as file:
+'''to READ the file_path 
+    with open(file_path,'r') as file:
 	file.content = file.read()
-print(file.content)
+print(file.content)'''
 
 
 
 
-'''#write each Commit_id into a txt file
+'''#write all Commit_ids into a txt file
 file=open('Current_GitHub_Commits.txt','w')
 for c in commit_ids:
     entry= c+'\n'
