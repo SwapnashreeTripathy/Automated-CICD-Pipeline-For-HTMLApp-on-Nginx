@@ -49,13 +49,20 @@
 ## Steps to RUN the Script:
 
   
-  1.	Change the File permission of both the “.py” & “.sh” script to be Executable.
+  1.	Change the File permission of both the “.py” & “.sh” script to be Executable.<br>
+    ```chmod +x bash_2nd_script.sh```<br>
+    ```chmod +x Get_Commitids.py```<br>
+  3.	Change the File Owner and Group permission to ROOT, as we are using SUDO in our script file. So while running the “.sh” Script via Cronjob no password is required to fill.
+    ```chgrp root bash_2nd_script.sh```<br>
+    ```chown root bash_2nd_script.sh```<br>
+    ```chgrp root Get_Commitids.py```<br>
+    ```chown root Get_Commitids.py```<br>
     
-  3.	Change the File Owner and Group permission to ROOT, as we are using SUDO in our script file. So while running the “.sh” Script via Cronjob no password is required to fill. 
-  4.	Add the Python Script to Bash Script, in order to have only one Cronjob scheduled. 
-  5.	Create a Cronjob for the Bash Script to run in every 2 mins with root privileges.
-  6.	To check if the cronjob is running or not, run the cat command for “/var/log/syslog”.
-  7.	Also can view the last output of the bash script in the “output.log” file.  You would need to provide “read” File permission to view the log file.
+     
+  5.	Add the Python Script to Bash Script, in order to have only one Cronjob scheduled. 
+  6.	Create a Cronjob for the Bash Script to run in every 2 mins with root privileges.
+  7.	To check if the cronjob is running or not, run the cat command for “/var/log/syslog”.
+  8.	Also can view the last output of the bash script in the “output.log” file.  You would need to provide “read” File permission to view the log file.
 
    
       
