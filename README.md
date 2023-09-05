@@ -33,6 +33,19 @@
 4. Write a Bash Script to Deploy the latest Code(only if there is new Commits present in GitHub) and start/restart Nginx as per the requirment.<br>
    * Move to html folder where the index.html is present in your server & get the "existing last commitid from your server".<br>
    * If the "latest commit_id from your Servers" is "same" as the "latest commit_id from your Github Repo", then print the same info & exit the script.<br>
+   * But if the Condition dose not match, First "ZIP the existing CICDProject-HTML & Move it"  into another folder.<br>
+     (For better use create the zip file name, with the current timestamp)<br>
+   * Then, Move to the folder where "Index.html" is present & "PULL the new Commits from Github".<br>
+   * Lastly check, if "Nginx is Active" on your server, if not then Restart the Nginx.<br>
+
+
+     ![image](https://github.com/SwapnashreeTripathy/CICDProject-HTML/assets/139486876/1066eee9-361d-48d1-bebb-6744294ddc9e)
+
+   
+     ![image](https://github.com/SwapnashreeTripathy/CICDProject-HTML/assets/139486876/775784a6-df22-46ae-9163-c167ffa94f8e)
+
+     ![image](https://github.com/SwapnashreeTripathy/CICDProject-HTML/assets/139486876/c1ac41f9-671b-4308-b7a7-05d2fcac3a17)
+
 
    
       
