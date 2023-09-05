@@ -1,8 +1,8 @@
 # Automate CICD-HTML Project Deployment to Nginx Server 
 
-#### If there is any new commit pushed to the GitHub Main branch, automatically those new changes/commits will get deployed to your Production/main Server using Automation script & cronjob.
+#### When there is any new commit pushed to the GitHub Main branch, automatically those new changes/commits will get deployed to your Production/main Server using Automation script & cronjob.
 
-## Thought Process to build this project
+## Thought Process to build this project:
 
 
  1.	Create/Take a simple HTML project and push it to a GitHub repository.
@@ -31,7 +31,7 @@
      ![image](https://github.com/SwapnashreeTripathy/CICDProject-HTML/assets/139486876/a1b4b9a2-1e88-47e7-8cec-8875577164ea)
      
 4. Write a Bash Script to Deploy the latest Code(only if there is new Commits present in GitHub) and start/restart Nginx as per the requirment.<br>
-   * Move to html folder where the index.html is present in your server & get the "existing last commitid from your server".<br>
+   * Move to html folder where the index.html is present in your server & get the "existing last commitid from your server" , save into a txt file.<br>
    * If the "latest commit_id from your Servers" is "same" as the "latest commit_id from your Github Repo", then print the same info & exit the script.<br>
    * But if the Condition dose not match, First "ZIP the existing CICDProject-HTML & Move it"  into another folder.<br>
      (For better use create the zip file name, with the current timestamp)<br>
@@ -46,6 +46,16 @@
 
      ![image](https://github.com/SwapnashreeTripathy/CICDProject-HTML/assets/139486876/c1ac41f9-671b-4308-b7a7-05d2fcac3a17)
 
+## Steps to RUN the Script:
+
+  
+  1.	Change the File permission of both the “.py” & “.sh” script to be Executable.
+    
+  3.	Change the File Owner and Group permission to ROOT, as we are using SUDO in our script file. So while running the “.sh” Script via Cronjob no password is required to fill. 
+  4.	Add the Python Script to Bash Script, in order to have only one Cronjob scheduled. 
+  5.	Create a Cronjob for the Bash Script to run in every 2 mins with root privileges.
+  6.	To check if the cronjob is running or not, run the cat command for “/var/log/syslog”.
+  7.	Also can view the last output of the bash script in the “output.log” file.  You would need to provide “read” File permission to view the log file.
 
    
       
