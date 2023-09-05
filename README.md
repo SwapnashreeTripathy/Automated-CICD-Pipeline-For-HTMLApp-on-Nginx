@@ -4,7 +4,7 @@
 
 ## Thought Process to build this project
 
-Task 1: Set Up a Simple HTML Project -
+
  1.	Create/Take a simple HTML project and push it to a GitHub repository.
  2.	Clone your GitHub Repo and Push this HTML project/index.html to your GitHub Main Branch.
 
@@ -29,6 +29,10 @@ Task 1: Set Up a Simple HTML Project -
    * Write this Commit_id into a path in Linux Machine "/home/swapna/hvdevops/CICDProject-HTML/bash_script/Current_GitHub_Commits.txt file" 
      
      ![image](https://github.com/SwapnashreeTripathy/CICDProject-HTML/assets/139486876/a1b4b9a2-1e88-47e7-8cec-8875577164ea)
+     
+4. Write a Bash Script to Deploy the latest Code(only if there is new Commits present in GitHub) and start/restart Nginx as per the requirment.<br>
+   * Move to html folder where the index.html is present in your server & get the "existing last commitid from your server".<br>
+   * If the "latest commit_id from your Servers" is "same" as the "latest commit_id from your Github Repo", then print the same info & exit the script.<br>
 
    
       
