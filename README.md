@@ -75,7 +75,10 @@
       ```chmod +x <Path_of_Logfile>/output.log```<br>
     ```cat <Path_of_Logfile>/output.log```<br>
    
-      
+## Run the localhost:
+ 1. In web browser type "localhost" or "127:0:0:1"
+ ![image](https://github.com/SwapnashreeTripathy/CICDProject-HTML/assets/139486876/90b2adae-37de-42fa-b5c6-cdd65b88d1af)
+
       
    	
 
