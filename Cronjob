@@ -1,0 +1,1 @@
+*/2 * * * *  /usr/bin/bash /home/swapna/hvdevops/CICDProject-HTML/bash_script/bash_2nd_script.sh > /home/swapna/hvdevops/CICDProject-HTML/bash_script/output.log 2>&1
