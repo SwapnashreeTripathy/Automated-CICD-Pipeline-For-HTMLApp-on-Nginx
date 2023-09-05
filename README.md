@@ -8,8 +8,12 @@ Task 1: Set Up a Simple HTML Project -
  1.	Create/Take a simple HTML project and push it to a GitHub repository.
  2.	Clone your GitHub Repo and Push this HTML project/index.html to your GitHub Main Branch.
 
-      ``git clone https://github.com/SwapnashreeTripathy/CICDProject-HTML.git``
+      ``git clone https://github.com/SwapnashreeTripathy/CICDProject-HTML.git``<br>
+   			``git add index.html``<br>
+   			```git commit -m "new commit to github main repo"```<br>
+   			``git push``<br>
       
-   	
+3. Get the Recent Commit from GitHub Repo using a Python Script (Get_Commitids.py).
+   
    	
 
