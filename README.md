@@ -1,6 +1,6 @@
 # Automate CICD-HTML Project Deployment to Nginx Server 
 
-#### When there is any new commit pushed to the GitHub Main branch, automatically those new changes/commits will get deployed to your Production/main Server using Automation script & cronjob.
+#### When there is any new commit pushed into the GitHub Main branch, automatically those new changes/commits should get deployed to your Production/main Server using an Automation script & Cronjob Scheduler.
 
 ## Thought Process to build this project:
 
